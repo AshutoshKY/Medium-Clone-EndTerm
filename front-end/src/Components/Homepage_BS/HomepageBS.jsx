@@ -95,53 +95,7 @@ function HomepageBS() {
           className="posts"
         >
           {
-            isLoadingPosts ? (<>
-            <Box mt={2} style={{display:"flex", flexDirection:"column", gap:"10px"}}>
-                        <Box mt={5} style={{display:"flex", flexDirection:"row", gap:"20px"}}>
-                        <SkeletonCircle size="10"  />
-                        <Skeleton height="20px" margin='auto' ml={0} mr={0} width='150px' />
-                        
-                        </Box>
-                        <Skeleton height="30px" mt={1} mb={1} />
-                        <Skeleton height="18px" />
-                        <Skeleton height="18px" />
-                        <Skeleton height="18px" />
-                        <Box style={{display:"flex", flexDirection:"row", gap:"20px"}}>
-                            <Skeleton height="15px" width={100} />
-                            <Skeleton height="15px" width={150}/>
-                        </Box>
-                    </Box>
-                    <Box mt={2} style={{display:"flex", flexDirection:"column", gap:"10px"}}>
-                        <Box mt={5} style={{display:"flex", flexDirection:"row", gap:"20px"}}>
-                        <SkeletonCircle size="10"  />
-                        <Skeleton height="20px" margin='auto' ml={0} mr={0} width='150px' />
-                        
-                        </Box>
-                        <Skeleton height="30px" mt={1} mb={1} />
-                        <Skeleton height="18px" />
-                        <Skeleton height="18px" />
-                        <Skeleton height="18px" />
-                        <Box style={{display:"flex", flexDirection:"row", gap:"20px"}}>
-                            <Skeleton height="15px" width={100} />
-                            <Skeleton height="15px" width={150}/>
-                        </Box>
-                    </Box>
-                    <Box mt={2} style={{display:"flex", flexDirection:"column", gap:"10px"}}>
-                        <Box mt={5} style={{display:"flex", flexDirection:"row", gap:"20px"}}>
-                        <SkeletonCircle size="10"  />
-                        <Skeleton height="20px" margin='auto' ml={0} mr={0} width='150px' />
-                        
-                        </Box>
-                        <Skeleton height="30px" mt={1} mb={1} />
-                        <Skeleton height="18px" />
-                        <Skeleton height="18px" />
-                        <Skeleton height="18px" />
-                        <Box style={{display:"flex", flexDirection:"row", gap:"20px"}}>
-                            <Skeleton height="15px" width={100} />
-                            <Skeleton height="15px" width={150}/>
-                        </Box>
-                    </Box>
-            </>) : <>
+            isLoadingPosts ? <></> : <>
             {allPosts.map((post, index) => (
             <div key={index} style={{marginBottom:"40px"}}>
               <div style={{ gap: '10px' }} className="avatar">
