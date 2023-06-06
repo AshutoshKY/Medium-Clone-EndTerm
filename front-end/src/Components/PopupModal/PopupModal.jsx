@@ -19,10 +19,10 @@ import {
   FormHelperText,
 } from '@chakra-ui/react';
 import { gapi } from 'gapi-script';
-import FacebookLogin from 'react-facebook-login';
-import GoogleLogin from 'react-google-login';
+// import FacebookLogin from 'react-facebook-login';
+// import GoogleLogin from 'react-google-login';
 import { GoMail } from 'react-icons/go';
-import { FaFacebook } from 'react-icons/fa';
+// import { FaFacebook } from 'react-icons/fa';
 import Toast from './Toast';
 import { useNavigate } from 'react-router-dom';
 

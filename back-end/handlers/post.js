@@ -132,7 +132,7 @@ const getPostsByUser = async(req, res) => {
         // const posts = await Post.find({user: id});
         const {token} = req.headers;
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        const posts = await Post.find({user: decoded._id}).populate('user');
+        const posts = await Post.find({user: decoded._id}).sort({_id:-1}).populate('user');
         if (!posts) {
             return res.status(400).send({message: 'User does not have any posts'});
         }
